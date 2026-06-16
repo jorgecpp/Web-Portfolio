@@ -2,31 +2,31 @@ export const items = [
     {
         "id": 1,
         "item": "Inicio",
-        "link": "/"
+        "link": "#home"
     },
     {
         "id": 2,
         "item": "Sobre Mi",
-        "link": "/"
+        "link": "#aboutMe"
     },
     {
         "id": 3,
         "item": "Experiencia",
-        "link": "/"
+        "link": "#experience"
     },
     {
         "id": 4,
         "item": "Proyectos",
-        "link": "/"
+        "link": "#projects"
     },
     {
         "id": 5,
         "item": "Habilidades",
-        "link": "/"
+        "link": "#tools"
     },
     {
         "id": 6,
         "item": "Contacto",
-        "link": "/"
+        "link": "#contact"
     }
 ]

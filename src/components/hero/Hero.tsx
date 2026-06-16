@@ -1,12 +1,10 @@
 import Image from "next/image"
+import { Networks } from "../shared/networks/Networks"
 
-import { IconEmail } from "../icons/IconEmail"
-import { IconGitHub } from "../icons/IconGitHub"
-import { IconLinkedIn } from "../icons/IconLinkedIn"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section id="home" className="relative min-h-screen overflow-hidden scroll-mt-28">
       {/* Background */}
       <Image
         src="/images/imageBackGround.jpg"
@@ -61,28 +59,7 @@ export function Hero() {
         </div>
 
         {/* Redes */}
-        <div className="mt-10 flex gap-4">
-          <a
-            href="#"
-            className="rounded-full border border-zinc-700 bg-black/20 p-3 text-zinc-300 backdrop-blur-sm transition hover:-translate-y-1 hover:border-amber-400 hover:text-amber-400"
-          >
-            <IconGitHub />
-          </a>
-
-          <a
-            href="#"
-            className="rounded-full border border-zinc-700 bg-black/20 p-3 text-zinc-300 backdrop-blur-sm transition hover:-translate-y-1 hover:border-amber-400 hover:text-amber-400"
-          >
-            <IconLinkedIn />
-          </a>
-
-          <a
-            href="#"
-            className="rounded-full border border-zinc-700 bg-black/20 p-3 text-zinc-300 backdrop-blur-sm transition hover:-translate-y-1 hover:border-amber-400 hover:text-amber-400"
-          >
-            <IconEmail />
-          </a>
-        </div>
+        <Networks/>
       </div>
     </section>
   )

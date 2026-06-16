@@ -18,8 +18,11 @@ export function NavbarDesktop() {
               key={item.id}
               className="group relative cursor-pointer text-zinc-300 transition-colors duration-300 hover:text-amber-400"
             >
-              {item.item}
-
+              <a
+              href={item.link}
+              >
+                {item.item}
+              </a>
               {/* Línea animada */}
               <span className="absolute -bottom-2 left-0 h-0.5 w-0 bg-amber-400 transition-all duration-300 group-hover:w-full" />
             </li>
@@ -27,9 +30,11 @@ export function NavbarDesktop() {
         </ul>
 
         {/* CTA */}
-        <button className="rounded-full bg-amber-400 px-5 py-2 font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-amber-300">
+        <a
+        href="mailto:jorgeluistevespro@gmail.com" 
+        className="rounded-full bg-amber-400 px-5 py-2 font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-amber-300">          
           Contáctame
-        </button>
+        </a>
       </nav>
     </header>
   );

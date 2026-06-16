@@ -2,7 +2,7 @@ import { Briefcase, Calendar, ChevronRight, GraduationCap } from "lucide-react";
 
 export function ProfessionalExperience() {
   return (
-    <section className="py-32 px-6">
+    <section id="experience" className="py-32 px-6 scroll-mt-28">
       <div className="max-w-6xl mx-auto">
         {/* Encabezado */}
         <div className="text-center">
@@ -42,7 +42,7 @@ export function ProfessionalExperience() {
 
                 <div className="flex items-center gap-2 rounded-full bg-zinc-800 px-4 py-2 text-zinc-400">
                   <Calendar size={16} />
-                  <span>2022 - Presente</span>
+                  <span>2023 - Presente</span>
                 </div>
               </div>
 

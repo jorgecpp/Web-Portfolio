@@ -1,54 +1,8 @@
+import { categories } from "@/src/data/categories";
 export function Tools() {
-  const categories = [
-    {
-      title: "Frontend",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Tailwind CSS",
-      ],
-    },
-    {
-      title: "Backend",
-      technologies: [
-        "Node.js",
-        "API REST",
-        "Supabase",
-      ],
-    },
-    {
-      title: "Bases de Datos",
-      technologies: [
-        "PostgreSQL",
-        "SQL",
-        "Supabase Database",
-      ],
-    },
-    {
-      title: "Cloud & DevOps",
-      technologies: [
-        "Azure",
-        "Vercel",
-      ],
-    },
-    {
-      title: "Herramientas",
-      technologies: [
-        "Git",
-        "GitHub",
-        "VS Code",
-        "Figma",
-        "Draw.io",
-      ],
-    },
-  ];
 
   return (
-    <section className="py-32 px-6">
+    <section id="tools" className="py-32 px-6 scroll-mt-28">
       <div className="max-w-7xl mx-auto">
         {/* Encabezado */}
         <div className="text-center">

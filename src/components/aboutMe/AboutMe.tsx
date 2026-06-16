@@ -1,6 +1,8 @@
+import { LaptopMinimal, Lightbulb, RocketIcon, Users } from "lucide-react";
+
 export function AboutMe() {
     return (
-        <section className="mt-10">
+        <section id="aboutMe" className="mt-10 scroll-mt-28">
             <div className="max-w-7xl mx-auto">
 
                 {/* Encabezado */}
@@ -38,7 +40,7 @@ export function AboutMe() {
 
                 <div className="bg-zinc-900/80 border border-zinc-800 rounded-3xl p-8 hover:border-amber-400/40 transition-all">
                     <div className="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400">
-                    💻
+                        <LaptopMinimal />
                     </div>
 
                     <h3 className="mt-6 text-2xl font-bold">
@@ -53,7 +55,7 @@ export function AboutMe() {
 
                 <div className="bg-zinc-900/80 border border-zinc-800 rounded-3xl p-8 hover:border-amber-400/40 transition-all">
                     <div className="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400">
-                    💡
+                        <Lightbulb />
                     </div>
 
                     <h3 className="mt-6 text-2xl font-bold">
@@ -68,7 +70,7 @@ export function AboutMe() {
 
                 <div className="bg-zinc-900/80 border border-zinc-800 rounded-3xl p-8 hover:border-amber-400/40 transition-all">
                     <div className="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400">
-                    🚀
+                        <RocketIcon />
                     </div>
 
                     <h3 className="mt-6 text-2xl font-bold">
@@ -82,7 +84,7 @@ export function AboutMe() {
 
                 <div className="bg-zinc-900/80 border border-zinc-800 rounded-3xl p-8 hover:border-amber-400/40 transition-all">
                     <div className="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400">
-                    👥
+                        <Users />
                     </div>
 
                     <h3 className="mt-6 text-2xl font-bold">

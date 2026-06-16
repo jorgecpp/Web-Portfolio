@@ -7,7 +7,7 @@ import {
 
 export function ContactMe() {
   return (
-    <section className="py-32 px-6">
+    <section id="contact" className="py-32 px-6 scroll-mt-28">
       <div className="max-w-7xl mx-auto">
         {/* Encabezado */}
         <div className="text-center">

@@ -1,4 +1,4 @@
-import { IconEmail, IconGitHub, IconLinkedIn } from "../icons";
+import { Networks } from "../shared/networks/Networks";
 
 export function Footer() {
   return (
@@ -17,32 +17,7 @@ export function Footer() {
           </div>
 
           {/* Redes */}
-          <div className="flex items-center gap-4">
-            <a
-              href="https://github.com/TU_USUARIO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800 text-zinc-400 transition hover:border-amber-400 hover:text-amber-400"
-            >
-              <IconGitHub/>
-            </a>
-
-            <a
-              href="https://linkedin.com/in/TU_PERFIL"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800 text-zinc-400 transition hover:border-amber-400 hover:text-amber-400"
-            >
-              <IconLinkedIn/>
-            </a>
-
-            <a
-              href="mailto:jorge.teves.dev@gmail.com"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800 text-zinc-400 transition hover:border-amber-400 hover:text-amber-400"
-            >
-              <IconEmail/>
-            </a>
-          </div>
+          <Networks/>
         </div>
 
         {/* Línea */}

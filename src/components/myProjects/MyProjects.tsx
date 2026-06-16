@@ -1,52 +1,10 @@
+import { projects } from "@/src/data/projects";
+
 export function MyProjects() {
-  const projects = [
-    {
-      title: "Inka Latin Travel",
-      description:
-        "Plataforma integral para una agencia de viajes que incluye gestión de tours, reservas, administración de contenido y un módulo de comercio electrónico (InkaShop) para la venta de productos.",
-      image: "images/projects/InkaLatinTravelProject.png",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Supabase",
-        "PostgreSQL",
-        "Azure",
-      ],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Netflix Clone",
-      description:
-        "Clon funcional de Netflix con catálogo dinámico, navegación intuitiva, interfaz moderna y diseño responsive inspirado en la plataforma original.",
-      image: "images/projects/NetflixCloneProject.png",
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-      ],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Portfolio Personal",
-      description:
-        "Portafolio profesional desarrollado para presentar proyectos, experiencia, tecnologías y trayectoria académica mediante una interfaz moderna y atractiva.",
-      image: "/projects/portfolio.png",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Vercel",
-      ],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-  ];
+
 
   return (
-    <section className="py-32 px-6">
+    <section id="projects" className="py-32 px-6 scroll-mt-28">
       <div className="max-w-7xl mx-auto">
         {/* Encabezado */}
         <div className="text-center">
@@ -109,14 +67,20 @@ export function MyProjects() {
                     Ver Proyecto
                   </a>
 
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-xl border border-zinc-700 px-4 py-2 transition hover:border-amber-400 hover:text-amber-400"
-                  >
-                    Código
-                  </a>
+                  {project.isPrivate ? (
+                    <span className="rounded-xl border border-zinc-700 px-4 py-2 text-zinc-500">
+                      Código Privado
+                    </span>
+                  ) : (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-xl border border-zinc-700 px-4 py-2 transition hover:border-amber-400 hover:text-amber-400"
+                    >
+                      Código
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
